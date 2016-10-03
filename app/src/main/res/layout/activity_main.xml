@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <com.example.jamesprijatna.pokeimg.CustomRecyclerView
+            android:id="@+id/mylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:overScrollMode="never"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="56dp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:id="@+id/imageView5"
+            android:background="@drawable/rect" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+
+            <Spinner
+                android:layout_width="241dp"
+                android:layout_height="53dp"
+                android:id="@+id/spinner"
+                android:textSize="14sp"
+                android:layout_weight="0.90" />
+
+            <Button
+                android:layout_width="93dp"
+                android:layout_height="40dp"
+                android:background="@drawable/press"
+                android:text="Filter"
+                android:textColor="#0000A0"
+                android:id="@+id/filter" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
