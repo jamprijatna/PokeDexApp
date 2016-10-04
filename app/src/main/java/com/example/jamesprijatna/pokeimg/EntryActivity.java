@@ -229,7 +229,10 @@ public class EntryActivity extends Activity {
 
             }
         });
+        //End AddButton
 
+
+        //Start RemoveButton
         remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -239,7 +242,10 @@ public class EntryActivity extends Activity {
 
             }
         });
+        //End RemoveButton
 
+
+        //Start ViewButton
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -249,6 +255,7 @@ public class EntryActivity extends Activity {
 
             }
         });
+        //End ViewButton
 
 
     }
