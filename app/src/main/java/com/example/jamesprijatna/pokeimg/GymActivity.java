@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,8 @@ public class GymActivity extends Activity {
     private GridLayoutManager glm;
     private SQLiteDatabase mydatabase;
     List<Pokemon> allItems = new ArrayList<Pokemon>();
+
+    private Button ret;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +62,17 @@ public class GymActivity extends Activity {
 
         RecyclerViewAdapter2 rcAdapter = new RecyclerViewAdapter2(GymActivity.this, allItems);
         rView.setAdapter(rcAdapter);
+
+        ret = (Button) findViewById(R.id.button5);
+
+        ret.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent myIntent = new Intent(GymActivity.this, MainActivity.class);
+                GymActivity.this.startActivity(myIntent);
+            }
+        });
 
     }
 
