@@ -263,6 +263,7 @@ public class EntryActivity extends Activity {
 
     private void evoStagesCheck() {
 
+        //PlaceHolder for #133 - Eevee
         if (id == 133) {
 
             poke.add("Eeve");

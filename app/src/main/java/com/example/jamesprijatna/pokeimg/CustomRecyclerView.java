@@ -7,6 +7,8 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 
+//http://stackoverflow.com/a/30747742
+
 public class CustomRecyclerView extends RecyclerView {
 
     Context context;

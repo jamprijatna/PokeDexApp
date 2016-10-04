@@ -44,9 +44,6 @@ public class MainActivity extends Activity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_item, elements);
         spinner.setAdapter(adapter);
 
-        //Start DB Code
-        //End DB Code
-
         mydatabase = openOrCreateDatabase("pokeDB", MODE_PRIVATE, null);
 
         //Start Data Retrieval Code
@@ -150,6 +147,9 @@ public class MainActivity extends Activity {
 
     }
 
+
+    //Codes below are used to save the scroll state of the RecyclerView
+
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
         state.putParcelable("key", glm.onSaveInstanceState());
@@ -176,6 +176,5 @@ public class MainActivity extends Activity {
             glm.onRestoreInstanceState(listState);
         }
     }
-
 
 }
