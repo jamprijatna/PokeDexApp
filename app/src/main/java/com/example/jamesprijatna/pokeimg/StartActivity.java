@@ -58,6 +58,10 @@ public class StartActivity extends Activity {
 
     }
 
+    /** Checks if the App is initialised for the first time and populates the DB with the .csv file
+     *  http://stackoverflow.com/a/13237848
+     */
+
     @Override
     protected void onResume() {
         super.onResume();

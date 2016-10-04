@@ -62,12 +62,8 @@ public class EntryActivity extends Activity {
     private Button remove;
     private Button view;
 
-
     private int id;
-    private int ide;
-
     private String t;
-
     private String n;
 
     private String fromName;
@@ -80,8 +76,6 @@ public class EntryActivity extends Activity {
     private Integer[] img;
     private String imgid;
     private String iconid;
-
-    private Context context;
 
     public static Activity act;
 
@@ -107,10 +101,6 @@ public class EntryActivity extends Activity {
         Cursor cursor = mydatabase.rawQuery("Select ID from Pokemon where Pokemon = " + "'" + t + "'", null);
         cursor.moveToFirst();
         id = cursor.getInt(0);
-
-        /*ide = intent.getIntExtra("ID", 1);
-        id = ide + 1;
-        imgid = "logo"+id;*/
 
         text = (TextView) findViewById(R.id.textView);
         descText = (TextView) findViewById(R.id.descText);
@@ -328,9 +318,6 @@ public class EntryActivity extends Activity {
 
                 itemname = new String[poke.size()];
                 itemname = poke.toArray(itemname);
-
-                //img = new Integer[pok.size()];
-                //img = pok.toArray(img);
 
                 img = new Integer[poke.size()];
 

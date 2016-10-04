@@ -30,8 +30,6 @@ public class CustomRecyclerView extends RecyclerView {
     public boolean fling(int velocityX, int velocityY) {
 
         velocityY *= 0.7;
-        // velocityX *= 0.7; for Horizontal recycler view. comment velocityY line not require for Horizontal Mode.
-
         return super.fling(velocityX, velocityY);
     }
 

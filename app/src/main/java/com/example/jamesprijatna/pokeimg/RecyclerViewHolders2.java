@@ -42,9 +42,7 @@ public class RecyclerViewHolders2 extends RecyclerView.ViewHolder implements Vie
         String tes = ((TextView) view.findViewById(R.id.item)).getText().toString();
 
         String[] parts = tes.split(". ");
-
         String test = parts[1];
-
 
         Toast.makeText(context, test, Toast.LENGTH_SHORT).show();
 
